@@ -139,7 +139,17 @@ bk_learning_dbt:
       token: <your-personal-access-token>
       threads: 4
       quoting:
-        database: true   # Required: catalog name contains hyphens
+        database: true   # Required: If catalog name contains hyphens
+    prod:
+      type: databricks
+      catalog: dbt-tutorial-prod
+      schema: default
+      host: <your-workspace>.cloud.databricks.com
+      http_path: /sql/1.0/warehouses/<your-warehouse-id>
+      token: <your-personal-access-token>
+      threads: 4
+      quoting:
+        database: true 
 ```
 
 ### Verify connection
