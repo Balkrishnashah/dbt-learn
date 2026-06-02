@@ -1,0 +1,13 @@
+sources:
+  - name: data_source
+    database: '{{ target.catalog}}'
+    schema: source
+    quoting:
+      database: true
+    tables:
+      - name: dim_customer
+      - name: dim_date
+      - name: dim_product
+      - name: dim_store
+      - name: fact_returns
+      - name: fact_sales

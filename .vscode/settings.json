@@ -1,0 +1,4 @@
+{
+    "dbt.dbtPythonPathOverride": "/Users/balkrishna/Documents/dbt-learn/.venv/bin/python3",
+    "dbt.perspectiveTheme": "Pro Dark"
+}
