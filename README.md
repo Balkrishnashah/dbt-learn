@@ -131,7 +131,6 @@ bk_learning_dbt:
   target: dev
   outputs:
     dev:
-      type: databricks
       catalog: dbt-tutorial-dev
       schema: default
       host: <your-workspace>.cloud.databricks.com
@@ -141,7 +140,6 @@ bk_learning_dbt:
       quoting:
         database: true   # Required: If catalog name contains hyphens
     prod:
-      type: databricks
       catalog: dbt-tutorial-prod
       schema: default
       host: <your-workspace>.cloud.databricks.com
